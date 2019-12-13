@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+
+	<!-- ******** The Basics ******** -->
+	<groupId>com.factoryMngmt</groupId>
+	<artifactId>root</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<!-- <dependencies>...</dependencies> <parent>...</parent> <dependencyManagement>...</dependencyManagement> 
+		<modules>...</modules> <properties>...</properties> -->
+
+	<!-- ******** Build Settings ******** <reporting>...</reporting> -->
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.8.1</version>
+
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
+
+
+	<!-- More Project Information <name>...</name> <description>...</description> 
+		<url>...</url> <inceptionYear>...</inceptionYear> <licenses>...</licenses> 
+		<organization>...</organization> <developers>...</developers> <contributors>...</contributors> -->
+
+	<!-- ******** Environment Settings ******** <issueManagement>...</issueManagement> 
+		<ciManagement>...</ciManagement> <mailingLists>...</mailingLists> <scm>...</scm> 
+		<prerequisites>...</prerequisites> <repositories>...</repositories> <pluginRepositories>...</pluginRepositories> 
+		<distributionManagement>...</distributionManagement> <profiles>...</profiles> -->
+
+
+	<modules>
+		<module>factory-model</module>
+		<module>factory-service</module>
+		<module>factory-db-mngmt</module>
+	</modules>
+</project>
